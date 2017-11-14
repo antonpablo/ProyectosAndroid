@@ -1,0 +1,132 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.pablo.felicitacumple.AutoMensaje"
+    android:background="#DDFFFE"
+    tools:ignore="MergeRootFrame" >
+
+   
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5sp"
+        android:text="Dond quiere enviar el mensaje?"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#F59250"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5sp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+
+            <CheckBox
+                android:id="@+id/autosms"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:text="@string/sms"
+                android:textColor="#8B8C86"
+                android:textStyle="bold" />
+
+            <CheckBox
+                android:id="@+id/wha"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:text="@string/what"
+                android:textColor="#37BE4E"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5sp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+
+            <CheckBox
+                android:id="@+id/email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="85dp"
+                android:text="@string/email"
+                android:textColor="#FA5762"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editText2"
+                android:layout_width="134dp"
+                android:layout_height="wrap_content"
+                android:background="#CFD2D5"
+                android:hint="Subject"
+                android:selectAllOnFocus="true" >
+
+                <requestFocus />
+            </EditText>
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="right"
+            android:orientation="horizontal" >
+
+            <CheckBox
+                android:id="@+id/fac"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:text="@string/fac"
+                android:textColor="#3E3EB4"
+                android:textStyle="bold" />
+
+            <CheckBox
+                android:id="@+id/twi"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5sp"
+                android:text="@string/twi"
+                android:textColor="#4AA3FC"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8sp"
+        android:layout_weight="0.11"
+        android:background="#CFD2D5"
+        android:ems="10"
+        android:gravity="top|left"
+        android:hint=""
+        android:selectAllOnFocus="true" />
+
+</LinearLayout>
+

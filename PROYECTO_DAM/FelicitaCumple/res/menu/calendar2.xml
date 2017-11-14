@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.pablo.felicitacumple.Calendar2" >
+
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/action_settings"/>
+    <item android:id="@+id/mod" android:title="Modificación de los mensajes de felicitación"></item>
+    <item android:id="@+id/man" android:title="Manual de usuario"></item>
+    <item android:id="@+id/ayu" android:title="Ayuda"></item>
+    <item android:id="@+id/ver" android:title="Acerca de"></item>
+
+</menu>

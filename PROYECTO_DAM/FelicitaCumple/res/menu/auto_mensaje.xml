@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.pablo.felicitacumple.AutoMensaje" >
+
+ <item android:id="@+id/action_new"
+          android:icon="@drawable/ic_guardar"
+          android:title="@string/action_new"
+          android:showAsAction="ifRoom" />
+
+</menu>
